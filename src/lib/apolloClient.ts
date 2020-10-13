@@ -33,9 +33,7 @@ function createApolloClient() {
     // const PORT = process.env.PORT || 3000
 
     // origin = `http://${hostname}:${PORT}`
-    endpoint =
-      process.env.API_ENDPOINT ||
-      'https://nextjs-graphql-with-prisma-simple.vercel.app/api'
+    endpoint = process.env.API_ENDPOINT || 'https://api.prisma-cms.com'
   }
 
   const errorLink = onError((error) => {

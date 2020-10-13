@@ -21,3 +21,8 @@
 ===============================================
 
 - Fix API endpoint for vercel.com deployment
+
+
+===============================================
+- Fix ts-node abs path resolving via add NODE_PATH=./
+  https://github.com/TypeStrong/ts-node/issues/422#issuecomment-328839004

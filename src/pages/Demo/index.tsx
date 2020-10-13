@@ -5,7 +5,7 @@ import { GetServerSideProps } from 'next'
 
 import { initializeApollo } from 'src/lib/apolloClient'
 
-import PostList, { ALL_POSTS_QUERY, allPostsQueryVars } from './PostList'
+import CommentsList, { ALL_POSTS_QUERY, allPostsQueryVars } from './CommentsList'
 
 export const Home = (): JSX.Element => {
   const router = useRouter()
@@ -23,7 +23,7 @@ export const Home = (): JSX.Element => {
       </Head>
 
       <main>
-        <PostList
+        <CommentsList
           variables={{
             skip: skip && typeof skip === 'string' ? parseInt(skip) : undefined,
             first:
