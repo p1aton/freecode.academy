@@ -1,5 +1,3 @@
-import { Home, getServerSideProps } from 'src/pages/Demo'
-
-export { getServerSideProps }
+import { Home } from 'src/pages/Demo'
 
 export default Home
