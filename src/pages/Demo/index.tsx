@@ -1,10 +1,13 @@
 
 import Head from 'next/head'
 
-import { useCommentsConnectionQuery } from 'src/modules/gql/generated';
+import { Maybe } from 'src/modules/gql/generated';
 
 
-console.log('useCommentsConnectionQuery', useCommentsConnectionQuery);
+export type T = Maybe<number>
+
+// console.log('useCommentsConnectionQuery', useCommentsConnectionQuery);
+console.log('Maybe');
 
 export const Home = (): JSX.Element => {
 
